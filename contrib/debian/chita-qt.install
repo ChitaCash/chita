@@ -1,0 +1,6 @@
+usr/local/bin/chita-qt usr/bin
+share/pixmaps/chita32.xpm usr/share/pixmaps
+share/pixmaps/chita16.xpm usr/share/pixmaps
+share/pixmaps/chita128.png usr/share/pixmaps
+debian/chita-qt.desktop usr/share/applications
+debian/chita-qt.protocol usr/share/kde4/services/

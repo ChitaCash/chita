@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Chita Core
+Comment=Chita P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Chita peer-to-peer Netzwerk
+Comment[fr]=Chita, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Chita, eşten eşe kriptografik sanal para birimi
+Exec=chita-qt %u
+Terminal=false
+Type=Application
+Icon=chita128
+MimeType=x-scheme-handler/chita;
+Categories=Office;Finance;

@@ -1,0 +1,22 @@
+[Unit]
+Description=Chita's distributed currency daemon
+After=network.target
+
+[Service]
+User=chitacore
+Group=chitacore
+
+Type=forking
+PIDFile=/var/lib/chitad/chitad.pid
+ExecStart=/usr/bin/chitad -daemon -pid=/var/lib/chitad/chitad.pid \
+-conf=/etc/chitacore/chita.conf -datadir=/var/lib/chitad -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
